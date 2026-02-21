@@ -1,23 +1,90 @@
-Sales Data Analysis Using NumPy Array Operations
-Problem Statement
-In today’s data-driven business environment, organizations rely on data analysis to understand sales performance, customer purchasing behavior, and revenue trends.
-Students are required to analyze a real-world Supermarket Sales dataset using the NumPy library to perform numerical and statistical analysis.
-The objective of this project is to apply NumPy array operations, indexing and slicing, mathematical and statistical functions, broadcasting, and vectorized computation to extract meaningful insights from sales data.
-________________________________________
-Dataset
-o	Product categories
-o	Quantity sold
-o	Unit price
-o	Total sales
-o	Profit / gross income
-________________________________________
-Project Objectives
-Students should be able to:
-1.	Load a real-world sales dataset and convert relevant data into NumPy arrays
-2.	Perform array operations to calculate total and average sales
-3.	Use indexing and slicing to extract specific sales records
-4.	Apply statistical operations such as mean, median, variance, and standard deviation
-5.	Use broadcasting to calculate revenue from quantity and unit price
-6.	Implement vectorized computation for efficient data analysis
-7.	Interpret the statistical results to understand sales trends and performance
+# 📊 Supermarket Sales Data Analysis (NumPy Project)
 
+## 📌 Overview
+
+This project performs exploratory data analysis on a supermarket sales
+dataset using **NumPy**. The goal is to demonstrate core NumPy concepts
+such as array operations, indexing, slicing, statistical analysis, and
+vectorized computations while extracting meaningful business insights
+from transaction data.
+
+## 🎯 Objectives
+
+-   Load and process CSV data using NumPy\
+-   Perform array operations to calculate totals and averages\
+-   Apply indexing and slicing to explore specific data segments\
+-   Compute statistical metrics like mean, median, variance, and
+    standard deviation\
+-   Use broadcasting and vectorized operations for efficient
+    calculations\
+-   Interpret results to derive insights about sales performance
+
+## 🗂️ Dataset
+
+The project uses a dataset named: supermarket_sales.csv
+
+It contains transaction-level details such as: - Product category\
+- Unit price\
+- Quantity sold\
+- Total sales\
+- Gross income
+
+## ⚙️ Technologies Used
+
+-   Python 🐍\
+-   NumPy
+
+## 🧠 Key Features
+
+### Data Loading
+
+The dataset is loaded using numpy.genfromtxt() while skipping the header
+row.
+
+### Array Operations
+
+-   Calculates overall total sales\
+-   Computes average transaction value
+
+### Indexing & Slicing
+
+-   Extracts subsets like first 5 records\
+-   Filters high-volume transactions (quantity ≥ 8)
+
+### Statistical Analysis
+
+Analyzes gross income using: - Mean\
+- Median\
+- Variance\
+- Standard deviation
+
+### Vectorized Computation
+
+Revenue = Quantity × Unit Price
+
+### Insights Interpretation
+
+Provides textual interpretation of statistical results.
+
+## ▶️ How to Run
+
+1.  Install Python (3.x recommended)\
+2.  Install NumPy if not installed:
+
+pip install numpy
+
+3.  Place supermarket_sales.csv in the correct path\
+4.  Run the notebook:
+
+jupyter notebook Project_week_1.ipynb
+
+## 🚀 Learning Outcomes
+
+-   How NumPy handles real datasets\
+-   Efficient numerical computation techniques\
+-   Basic data analysis workflow\
+-   Turning raw data into insights
+
+## 📜 License
+
+This project is for educational purposes.
